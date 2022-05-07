@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta property="og:url"                content="https://2048game.gq" />
+        <meta property="og:type"               content="game" />
+        <meta property="og:title"              content="2048 Game" />
+        <meta property="og:description"        content="A 2048 game that you can enjoy anytime!" />
+        <meta property="og:image"              content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2048_logo.png/220px-2048_logo.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2048</title>
+        <link rel="shortcut icon" type="image/png" href="img/2048_logo.png"/>
+        <link rel="stylesheet" href="2048.css">
+        <script src="https://kit.fontawesome.com/d8ccac94eb.js" crossorigin="anonymous"></script>
+        <script src="2048.js"></script>
+    </head>
+
+    <body>
+        <h1 class="main-title"><i class="fa-solid fa-gamepad"></i> 2048</h1>
+        <hr>
+        <button onclick="window.location.reload();" class="btn btn-background-slide"><i class="fa-solid fa-arrow-rotate-right"></i> Restart</button>
+        <a href="/scratch.html">
+        <button class="btn btn-background-slide"><i class="fa-solid fa-file-code"></i> Scratch Version</button>
+        </a>
+        <h2>Score: <span id="score">0</span></h2>
+        <div id="board">
+        </div>
+    </body>
+</html>

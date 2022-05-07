@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  html, body {
+    background: #faf8ef;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  hr {
+    width: 500px;
+  }
+
+  #board {
+    width: 600px;
+    height: 420px;
+    background-color: #faf8ef;
+    border: 6px solid #bbada0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  /* Buttons */
+
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  button {
+    margin: 1rem;
+  }
+
+  .btn {
+    background-color: var(--background-color);
+    color: #222;
+    padding: .6em 1.5em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-size: medium;
+    --background-color: #E3E3E3;
+    --border-size: 3px;
+    --accent-color: #8f7a66;
+  }
+
+  .btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .btn.btn-background-slide:hover::before,
+  .btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+  }
+  
+  .btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+    color: white;
+  }
